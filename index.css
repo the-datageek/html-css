@@ -14,8 +14,8 @@ body{
       border: 2px solid #9b8798;
       background-color: #f0f0f0;
       border-radius: 8px;
-      margin-top: 1rem;
-     
+      margin-right: 15px;  
+      margin-top: 10rem;
 }
 
 
@@ -26,16 +26,37 @@ h3{
 
 .flex-container{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 30vh;
-    flex-wrap: wrap;
+    flex-direction: row;  
+    border-radius: 28px;
+    /* margin-top: 5rem; */
+    margin: 5rem;
    
   }
 
-img{
+/* img{
     height: 30px;
     width: 30px;
     border-radius: 28px;
-}
+} */
+
+@media (max-width: 768px) {
+    /* Media query for screen size up to 768px */
+    .flex-container {
+      flex-direction: column; /* Change to vertical layout */
+      padding: 30px;
+      margin: 5px;
+    }
+
+    .box {
+      width: 100%; /* Full width within flex container */
+      height: auto; /* Adjust height as needed */
+      padding: 30px;
+      margin: 5px;
+     
+
+
+    }
+  }
